@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: block;
+  font-size: 100%;
+  font: inherit;
+  overflow: hidden;
+ 
+}
+
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-image: url(./assets/poster.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: #202020;
+  font-family: sans-serif;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.pack-container {
+  margin: 0 auto;
+  width: fit-content;
+  position: relative;
+  display: flex;
+  max-width: 350px;
+  flex-direction: column;
+  border-radius: 12px;
+  background-color: #202020;
+  border: 1px solid #fff;
+  padding: 1.6rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.header {
+  position: relative;
+  margin: 0;
+  margin-bottom: 2rem;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.title {
+  display: block;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+}
+
+.price-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+  font-family: sans-serif;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
+.price-container span:first-child {
+  margin-top: 10px;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.button-container {
+  margin-top: 20px;
+  padding: 0;
+}
+
+.button-container button {
+  display: block;
+  width: 100%;
+  padding: 6px 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  outline: 0;
+  border: 0;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  background-color: #575e70;
+  border: 1px solid rgba(217, 220, 231, 0.322);
+  box-shadow: inset 0 0 0 0 #403d3f;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+#change:hover{
+    box-shadow: inset 0 100px 0 0 #598cf2;
+}
+
+
+
+.fecha p {
+  padding: 5px;
+
+  width: 100%;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+  display: table;
+}
+
+.InputContainer {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #606060;
+  overflow: hidden;
+  padding: 0px 5px 0px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.322);
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+}
+
+.input {
+  width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  caret-color: rgb(255, 81, 0);
+  background-color: #606060;
+  font-weight: 600;
+  font-size: 1.5em;
+  color: white;
+}
+
+.visaCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+  height: 25px;
+  background-color: #606060;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.068);
+  border-radius: 7px;
+  font-size: 1.5em;
+}
+
+.titulo {
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+.cont-reloj{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120px;
+    width: 20%;
+     border-radius:30px;
+     font-weight: bold;
+     font-family: sans-serif;
+     color: #dee6e4;
+}
+.reloj{
+    font-size:12px;  
+    color: #dee6e4;
+}
+.datos{
+    font-size:16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media only screen and (max-width: 1200px) {
+.cont-reloj{
+width:50%;
+}
+}
+
+@media only screen and (max-width: 960px) {
+.cont-reloj{
+width:60%;
+}
+}
+@media only screen and (max-width: 870px) {
+.cont-reloj{
+width:65%;
+}
+}
+@media only screen and (max-width: 400px) {
+.cont-reloj{
+width:85%;
+height:150px
+}
+.reloj{
+    font-size:14pxm;  
+}
+.datos{
+font-size:14px
+}
+}
+
+
